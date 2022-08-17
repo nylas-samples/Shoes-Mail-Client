@@ -2,6 +2,8 @@
 
 This sample will show you to create a Mail Box using the Nylas APIs, JRuby and Shoes 4.
 
+Let's celebrate _why's Day on August 19.
+
 ## Setup
 
 ### System dependencies
