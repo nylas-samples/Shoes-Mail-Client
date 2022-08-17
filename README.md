@@ -1,45 +1,52 @@
-# template-empty
-_description: An empty template for your code sample_
+# Shoes-Mail-Client
 
-Please include this sample in the [org readme](https://github.com/nylas-samples/.github/blob/main/profile/README.md)?
+This sample will show you to create a Mail Box using the Nylas APIs, JRuby and Shoes 4.
 
-<br />
+## Setup
 
-## Installation
+### System dependencies
 
-The recommended way to use this sample is ...
+- Java 9.0.4.0.11
+- JRuby-9.3.4.0
 
-You can also clone the repository ...
+### Gather environment variables
 
-You'll find more detailed instructions ...
+You'll need the following values:
 
+```text
+ACCESS_TOKEN = ""
+```
 
-<br />
+Add the above values to a new `.env` file:
 
+```bash
+$ touch .env # Then add your env variables
+```
 
-## FAQ
+### Install dependencies
 
-Q: 
+```bash
+# To read .env files
+$ gem install dotenv
 
-A: 
+# Makes http fun again
+$ gem install httparty
 
+# Shoes 4 GUI Toolkit
+$ gem install shoes --pre
 
-<br />
+```
 
-## Get support
+## Usage
 
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
+Run the app using the `shoes` command:
 
-If you have questions, comments, or need help with code, we're here to help:
-- Email us at support@nylas.com
+```bash
+$ shoes Shoes_Mail_Client.rb
+```
 
-<br />
+When successfull, it will display a GUI window showing the first 5 emails from the inbox.
 
-## Contributing
+## Learn more
 
-...
-
-<br />
-
-## Authors
-- @
+Visit our [Nylas Email API documentation](https://developer.nylas.com/docs/connectivity/email/) to learn more.
