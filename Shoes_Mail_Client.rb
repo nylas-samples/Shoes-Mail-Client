@@ -48,7 +48,12 @@ end
 # This class will make sure our emails look nice and tidy
 class Clean_Email
 	def initialize(message)
-		@body = message.gsub(/\n/," ").gsub(/<style>.+<\/style>/," ").gsub(/<("[^"]*"|'[^']*'|[^'">])*>/," ").gsub(/&nbsp;/, " ")
+		@body = messagegsub(/\n/," ").gsub(/<style>.+<\/style>/," ").
+					      gsub(/<("[^"]*"|'[^']*'|[^'">])*>/," ").
+					      gsub(/.email-content\{.+\}/," ").
+					      gsub(/&nbsp;/, " ").
+					      gsub(/.s/, " ").
+					      gsub(/^\s+|\s+$\/g/, "")
 	end
 	
 	def get_clean()
