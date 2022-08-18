@@ -239,10 +239,10 @@ class Pages < Shoes
 	
 	# View to compose an email
 	def compose()
-		@recipient_name = ""
-		@recipient_email = ""
-		@subject = ""
-		@body = ""
+		@recipient_name.text = ""
+		@recipient_email.text = ""
+		@subject.text = ""
+		@body.text = ""
 		background lightblue
 		stack do
 			background red
@@ -289,10 +289,10 @@ class Pages < Shoes
 	
 	# View to reply an email
 	def reply(index)
-		@recipient_name = ""
-		@recipient_email = ""
-		@subject = ""
-		@body = ""
+		@recipient_name.text = ""
+		@recipient_email.text = ""
+		@subject.text = ""
+		@body.text = ""
 		background lightblue
 		stack do
 			background red
