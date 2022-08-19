@@ -49,6 +49,9 @@ $ shoes Shoes_Mail_Client.rb
 
 When successfull, it will display a GUI window showing the first 5 emails from the inbox.
 
+## Read the blog post
+[_why day 2022](https://www.nylas.com/blog/_why-day-2022-dev/)
+
 ## Learn more
 
 Visit our [Nylas Email API documentation](https://developer.nylas.com/docs/connectivity/email/) to learn more.
