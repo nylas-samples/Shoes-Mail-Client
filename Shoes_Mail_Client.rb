@@ -36,7 +36,7 @@ class Label
 		@labels = HTTParty.get('https://api.nylas.com/labels',
 		                                     :headers => @headers.get_headers())
 		for @label in @labels
-			@labelsDict[@label["name"]] = @label["id"]
+			@labelsDict[@label.name] = @label.id
 		end
 	end
 	
